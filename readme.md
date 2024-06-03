@@ -1,6 +1,6 @@
 # Discord Embed Builder
 
-![Preview](./preview.png)
+![Preview](./preview.mp4)
 
 A web-based application to create Discord embed messages using webhooks. Built with React and Tailwind CSS.
 
