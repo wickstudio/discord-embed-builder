@@ -1,0 +1,206 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-900 text-white font-sans;
+}
+
+h1 {
+  @apply text-4xl font-bold mb-8 text-center text-gray-100;
+}
+
+h2 {
+  @apply text-2xl font-bold mb-4 text-gray-100;
+}
+
+label {
+  @apply block mb-2 font-semibold text-gray-300;
+}
+
+input, textarea {
+  @apply bg-gray-800 text-gray-100 p-3 mb-4 border border-gray-600 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300 ease-in-out;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  @apply p-2 rounded text-white transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2;
+}
+
+.btn-blue {
+  @apply bg-blue-500 hover:bg-blue-600 focus:ring-blue-500;
+}
+
+.btn-red {
+  @apply bg-red-500 hover:bg-red-600 focus:ring-red-500;
+}
+
+.btn-green {
+  @apply bg-green-500 hover:bg-green-600 focus:ring-green-500;
+}
+
+.custom-inline-block {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.custom-block {
+  display: block;
+}
+
+.custom-flex {
+  display: flex;
+}
+
+.custom-flex-wrap {
+  flex-wrap: wrap;
+}
+
+.custom-items-center {
+  align-items: center;
+}
+
+.custom-border-left {
+  border-left-width: 4px;
+  padding-left: 1rem;
+}
+
+.relative {
+  position: relative;
+}
+
+.custom-bg-gray-800 {
+  background-color: #2d3748;
+}
+
+.custom-text-white {
+  color: white;
+}
+
+.custom-rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.custom-shadow-md {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.pt-2 {
+  padding-top: 0.5rem;
+}
+
+.border-t {
+  border-top-width: 1px;
+}
+
+.border-gray-700 {
+  border-color: #4a5568;
+}
+
+.text-blue-400 {
+  color: #63b3ed;
+}
+
+.text-blue-300 {
+  color: #90cdf4;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
+.w-8 {
+  width: 2rem;
+}
+
+.h-8 {
+  height: 2rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.w-6 {
+  width: 1.5rem;
+}
+
+.h-6 {
+  height: 1.5rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+}
+
+/* Scrollbar Customization */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #4a5568;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #2d3748;
+}
+
+/* Card Hover Effect */
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Animation for Loading */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.loading {
+  animation: pulse 2s infinite;
+}
+
+/* Animated Gradient Background */
+.animated-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, #00C9FF, #92FE9D);
+  background-size: 200% 200%;
+  animation: gradient-animation 10s ease infinite;
+  z-index: -1;
+}
+
+@keyframes gradient-animation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
